@@ -1,0 +1,13 @@
+version: '3'
+services:
+  sandbox:
+    container_name: eth_sandbox
+    image: node:10
+    volumes:
+      - "./:/usr/src/app"
+    ports:
+      - 8545:8545
+      - 7545:8545
+    tty: true
+    command: 'bash -c "npm i && npm run ganache:cli"'
+    working_dir: "/usr/src/app"

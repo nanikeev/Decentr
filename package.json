@@ -1,0 +1,43 @@
+{
+  "name": "decentr",
+  "version": "1.0.0",
+  "description": "Decentr Ethereum service.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "truffle:compile": "truffle compile",
+    "truffle:migrate": "truffle migrate",
+    "truffle:version": "truffle version",
+    "truffle:test": "truffle test",
+    "truffle:test:ganache": "npm run truffle:test -- --network ganache",
+    "npx:oz:deploy": "npx oz deploy",
+    "truffle:deploy": "truffle migrate —-reset --compile-all",
+    "truffle:deploy:ganache": "npm run truffle:deploy -- --network ganache",
+    "truffle:deploy:kovan": "npm run truffle:deploy -- --network kovan",
+    "truffle:deploy:ropsten": "npm run truffle:deploy -- --network ropsten",
+    "truffle:deploy:mainnet": "npm run truffle:deploy -- --network mainnet",
+    "truffle:deploy:ganache:verbose": "npm run truffle:deploy:ganache -- --verbose-rpc",
+    "truffle:deploy:ganache:describe": "npm run truffle:deploy:ganache -- --describe-json",
+    "truffle:flattener": "truffle-flattener ./contracts/DecentrSaleContract.sol >> ./contracts-flattern/DecentrSaleContract.sol && truffle-flattener ./contracts/Decentr.sol >> ./contracts-flattern/Decentr.sol",
+    "g:truffle:console": "truffle console --network ganache",
+    "ganache:cli": "ganache-cli -h 0.0.0.0 -p 7545"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^3.1.0",
+    "@truffle/hdwallet-provider": "^1.0.37-next.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "bignumber.js": "^9.0.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "ganache-cli": "^6.9.1",
+    "solc": "^0.6.10",
+    "truffle": "^5.1.30",
+    "truffle-assertions": "^0.9.2",
+    "truffle-flattener": "^1.4.4"
+  }
+}
