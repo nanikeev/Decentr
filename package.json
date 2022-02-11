@@ -24,7 +24,7 @@
   "dependencies": {},
   "devDependencies": {
     "@openzeppelin/cli": "^2.8.2",
-    "@openzeppelin/contracts": "^3.1.0",
+    "@openzeppelin/contracts": "^4.4.2",
     "@truffle/hdwallet-provider": "^1.0.37-next.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
